@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elektra Nails</title>
+    <link rel="stylesheet" href="CSS/EstiloInicio.css" />
+    <header class="header">
+    <div class="logo">Nury Valero</div>
+    <div class="InputContainer">
+      <input placeholder="Buscar..." id="input" class="input" name="text" type="text">
+    </div>
+    <nav class="nav">
+      <div class="dropdown">
+        <button class="dropbtn">Productos</button>
+        <div class="dropdown-content">
+          <a href="#">Elektra Nails</a>
+          <a href="#">Omyx</a>
+          <a href="#">The Manicure Company</a>
+          <a href="#">Lady Lock</a>
+          <a href="#">Mix Nails</a>
+          <a href="#">Staleks</a>
+          <a href="#">SPA</a>
+          <a href="#">Outlet</a>
+        </div>
+      </div>
+      <div class="desplegable">
+        <button class="boton-desplegable">Categorías</button>
+        <div class="contenido-desplegable">
+          <a href="#">Esmaltes</a>
+          <a href="#">Tops</a>
+          <a href="#">Bases</a>
+          <a href="#">Gel</a>
+          <a href="#">Acrygel</a>
+          <a href="#">Líquidos</a>
+          <a href="#">Herramientas</a>
+          <a href="#">Tips y moldes</a>
+          <a href="#">Accesorios</a>
+          <a href="#">Decoración</a>
+          <a href="#">Para ti</a>
+          <a href="#">Para tus clientas</a>
+          <a href="#">Pinceles</a>
+          <a href="#">Limas</a>
+          <a href="#">Spa</a>
+          <a href="#">Outlet</a>
+          <a href="#">1€</a>
+    </div>
+
+      <a href="#" class="account-icon">
+        <img src="IMG/usuario.png" alt="Cuenta" class="account-icon-img" />
+      </a>
+    </nav>
+  </header>
+  
+
+    <!-- Sección principal con botones de acceso -->
+    <main class="main-section">
+      <img
+        src="IMG/Banner-Elektra-Sin-Fondo-2048x1024.png"
+        alt="Elektra Logo"
+        class="banner-image"
+      />
+      <div class="buttons">
+        <a href="#" class="button highlight">Academia Online</a>
+        <a href="#" class="button highlight">Tienda Online</a>
+      </div>
+    </main>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="faq-section">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-item">
+      <label class="container">
+          <input type="checkbox" onclick="toggleAnswer(this)">
+          <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="chevron-down">
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path>
+          </svg>
+          ¿Hay gastos de envíos?
+      </label>
+      <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed vulputate, libero sed tincidunt consectetur, libero nisl egestas sapien, eu tincidunt sapien nisi a eros.</p>
+  </div>
+  
+      <!-- Puedes agregar más preguntas aquí -->
+    </section>
+
+    <footer class="footer">
+    <p>© 2024 Nury Valero. Todos los derechos reservados.</p>
+</footer>
+
+  <script>
+    function toggleAnswer(checkbox) {
+    const answer = checkbox.closest('.faq-item').querySelector('.faq-answer');
+    answer.style.display = checkbox.checked ? 'block' : 'none';
+}
+  </script>
+
+  </body>
+
+  // Función para alternar la visibilidad de la respuesta de la pregunta frecuente
+function toggleAnswer(checkbox) {
+  const answer = checkbox.closest('.faq-item').querySelector('.faq-answer');
+  answer.style.display = checkbox.checked ? 'block' : 'none';
+}
+
+</html>
